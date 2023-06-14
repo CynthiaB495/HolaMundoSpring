@@ -32,4 +32,11 @@ public class usuarioDaoImp implements usuarioDao {
 
 	}
 
+	@Override
+	public void registrar(Usuario usuario) {
+		
+		entityManager.merge(usuario);
+		
+	}
+
 }
